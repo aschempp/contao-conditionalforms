@@ -93,7 +93,7 @@ class FormCondition extends Widget
 	 */
 	public function generate()
 	{
-		return sprintf('<input type="hidden" name="%s" value="" /><input type="checkbox" name="%s" id="opt_%s" class="checkbox" value="1" onclick="if(this.checked) { document.id(\'condition_%s\').style.display=\'block\'; } else { document.id(\'condition_%s\').style.display=\'none\'; }"%s%s /> <label for="opt_%s">%s</label>',
+		return sprintf('<input type="hidden" name="%s" value="" /><input type="checkbox" name="%s" id="opt_%s" class="checkbox" value="1" onclick="if(this.checked) { getElementById(\'condition_%s\').style.display=\'block\'; } else { getElementById(\'condition_%s\').style.display=\'none\'; }"%s%s /> <label for="opt_%s">%s</label>',
 						$this->strName,
 						$this->strName,
 						$this->strId,
